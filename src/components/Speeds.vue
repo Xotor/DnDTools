@@ -88,6 +88,50 @@ export default {
   name: 'Speeds',
   data () {
     return {
+      mapsize: [ {
+        name: 'Dungeon',
+        game: { value: 1, name: 'Square', unit: 'sq' },
+        metric: { value: 3, name: 'Meter', unit: 'm' },
+        imperial: { value: 10, name: 'Feet', unit: 'ft' },
+        speed: {
+          slow: 20,
+          normal: 30,
+          fast: 40,
+          name: 'Minute',
+          unit: 'min'
+        }
+      }, {
+        name: 'City',
+        game: { value: 1, name: 'Square', unit: 'sq' },
+        metric: { value: 30, name: 'Meter', unit: 'm' },
+        imperial: { value: 100, name: 'Feet', unit: 'ft' },
+        speed: {
+          slow: 2,
+          normal: 3,
+          fast: 4,
+          name: 'Minute',
+          unit: 'min'
+        }
+      }, {
+        name: 'Province',
+        game: { value: 1, name: 'Hexagon', unit: 'hex' },
+        metric: { value: 2, name: 'Kilometer', unit: 'km' },
+        imperial: { value: 1, name: 'Mile', unit: 'mi' },
+        speed: {
+          slow: 2,
+          normal: 3,
+          fast: 4,
+          name: 'Hour',
+          unit: 'hr'
+        },
+        day_speed: {
+          slow: 18,
+          normal: 24,
+          fast: 30,
+          name: 'Day',
+          unit: 'day'
+        }
+      }]
     }
   }
 }
